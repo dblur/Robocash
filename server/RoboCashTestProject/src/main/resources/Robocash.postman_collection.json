@@ -1,0 +1,122 @@
+
+//импортируйте этот json в postman, чтобы выполнить тестовые GET, PUT, POST запросы.
+
+{
+	"info": {
+		"_postman_id": "38c6a3b0-1f33-4fcd-bd6d-9eae34594745",
+		"name": "Robocash",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addRegistredAddress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"registred_address_id\": {\"id\": 1},\"actual_address_id\": {\"id\": 1},\"firstname\": \"Ivan\",\"middlename\": \"Ivanovich\",\"lastname\": \"Ivanov\",\"sex\": \"male\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addActualAddress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"registred_address_id\": {\"id\": 1},\"actual_address_id\": {\"id\": 1},\"firstname\": \"Ivan\",\"middlename\": \"Ivanovich\",\"lastname\": \"Ivanov\",\"sex\": \"male\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"registred_address_id\": {\"id\": 1},\"actual_address_id\": {\"id\": 1},\"firstname\": \"Ivan\",\"middlename\": \"Ivanovich\",\"lastname\": \"Ivanov\",\"sex\": \"male\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editActualAddress",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n  \"country\": \"Russia\",\r\n  \"region\": \"NSO\",\r\n  \"city\": \"Novosibirsk\",\r\n  \"street\": \"Frunze\",\r\n  \"house\": \"4\",\r\n  \"flat\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/edit/address",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit",
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerByFirstnameAndLastName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
