@@ -8,3 +8,4 @@
 Там же Robocash.postman_collection.json для импорта готовых GET, PUT, POST запросов в Postman.
 frontend-часть на клиенте отсутствует.
 
+# Java, Spring framework, PostreSql, Postman
